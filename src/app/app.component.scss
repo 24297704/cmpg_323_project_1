@@ -1,3 +1,78 @@
-app-root {
+.container {
+  &::after {
+    display: block;
+    content: "";
+    clear: both;
+  }
 
+  margin: 0 20px;
+}
+
+.site-content {
+  padding-top: 66px;
+}
+
+@media only screen and (max-width: 768px) {
+  .site,
+  .site-container {
+    height: 100%;
+  }
+
+  .site-container {
+    overflow: hidden;
+  }
+
+  .site {
+  }
+
+  .site-content {
+    position: absolute;
+    top: 66px;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    padding-top: 0;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .header {
+    position: static;
+  }
+
+  .footer {
+    .footer-left,
+    .footer-center,
+    .footer-right {
+      display: block;
+      width: 100%;
+      margin-bottom: 40px;
+      text-align: center;
+    }
+
+    .footer-center {
+      i {
+        margin-left: 0;
+      }
+    }
+  }
+  .menu {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background-color: darken(#04045d, 5);
+
+    width: 250px;
+
+    a {
+      display: block;
+      height: 40px;
+
+      text-align: center;
+      line-height: 40px;
+
+      border-bottom: 1px solid #04045d;
+    }
+  }
 }

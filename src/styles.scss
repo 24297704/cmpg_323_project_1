@@ -1,0 +1,16 @@
+html,
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1em;
+  line-height: 1.4;
+  height: 100%;
+
+  margin: 0;
+  padding: 0;
+}
+
+
+@media (max-height:800px){
+  footer { position: static; }
+  header { padding-top:50px; }
+}
