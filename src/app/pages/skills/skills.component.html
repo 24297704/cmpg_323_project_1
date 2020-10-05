@@ -1,0 +1,60 @@
+<div>
+  <h2>Skills</h2>
+  <p>Welcome to my Awesome Skills!</p>
+  <p>This section will contain my technical skills, as well as any other skills that might be relevant, or irrelevant...
+    Basically whatever I can think of.</p>
+  <div>
+    <h3>Technical skills</h3>
+    <p>These are my bread and butter skills (Also how I afford bread and butter), I use these skills on a daily basis
+      and am quite proficient in all of them</p>
+    <ul>
+      <li>HTML (Used in this site)</li>
+      <li>CSS (Used in this site)</li>
+      <li>JavaScript (Used in this site)</li>
+      <li>TypeScript (Used in this site)</li>
+      <li>Angular (Used to code this)</li>
+      <li>NodeJS (What I specialise in)</li>
+      <li>Ionic (Think Angular, but for mobile devices)</li>
+      <li>PWA (Stands for Progressive Web Apps)</li>
+      <li>IoT (Internet of Things)</li>
+      <li>Git</li>
+      <li>REST (Web APIs)</li>
+      <li>Docker</li>
+      <li>MongoDB</li>
+      <li>MySQL</li>
+      <li>Linux</li>
+      <li>Networking (At a basic to intermediate level)</li>
+    </ul>
+    <p>There are probably some missing, but the ones above are the main ones that I use in my day to day life.</p>
+  </div>
+  <div>
+    <h3>Soft skills</h3>
+    <p>These are the skills I use that aren't about technology explicitly, and have a wider range of uses.</p>
+    <ul>
+      <li>Problem Solving</li>
+      <li>Creative Thinking</li>
+      <li>Leadership (While I will never be a born leader, I can take charge when needed)</li>
+      <li>Communication</li>
+      <li>Teamwork</li>
+      <li>Focus (Once I get in the zone, I can stay there for hours)</li>
+      <li>Common Sense (You would not believe how rare this is)</li>
+    </ul>
+  </div>
+  <div>
+    <h3>Other skills</h3>
+    <p>These skills are of questionable utility in a work environment, but should tell you a bit more about me</p>
+    <ul>
+      <li>Squash (Though I'm not very good)</li>
+      <li>Shooting (Guns specifically)</li>
+      <li>Swimming</li>
+      <li>Cooking</li>
+      <li>DIY Tech Projects (Built an adblock with a Raspberry Pi once, no ads in my whole house!)</li>
+      <li>Margaritas (Both drinking and making them)</li>
+      <li>I like to think I'm funny <a href="javascript:void(0)" (click)="getJoke()">Click here for a joke</a></li>
+    </ul>
+    <div>
+      <img src="/assets/loader.svg" *ngIf="loading">
+      <p *ngIf="joke && !loading">{{ joke }}</p>
+    </div>
+  </div>
+</div>
