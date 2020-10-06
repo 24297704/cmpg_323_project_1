@@ -16,4 +16,8 @@ export class ApiService {
       }
     })
   }
+
+  getWeather () {
+    return this.http.get('https://api.openweathermap.org/data/2.5/weather?q=Pretoria,za&units=metric&appid=97356869913df5776b88eb0a5cb15872')
+  }
 }

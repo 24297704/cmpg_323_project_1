@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core'
+import { ApiService } from '../../services'
 
 @Component({
   selector: 'app-footer',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FooterComponent implements OnInit {
 
-  constructor() { }
+  weather: { temp: any, sky: any }
 
-  ngOnInit(): void {
+  constructor (private apiService: ApiService) { }
+
+  ngOnInit (): void {
+    this.apiService.getWeather().subscribe((res: any) => {
+      this.weather = { temp: res.main.temp, sky: res.weather[0].main }
+    })
   }
 
 }

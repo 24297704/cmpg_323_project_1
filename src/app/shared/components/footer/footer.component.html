@@ -17,6 +17,14 @@
       <p><span>Pretoria</span>
         Gauteng, South Africa</p>
     </div>
+    <div *ngIf="weather">
+      <i class="fa fa-cloud"></i>
+      <p><span>Sky</span>{{weather.sky}}</p>
+    </div>
+    <div *ngIf="weather">
+      <i class="fa fa-thermometer"></i>
+      <p><span>Temp</span>{{weather.temp}}&#8451;</p>
+    </div>
 
     <div>
       <i class="fa fa-phone"></i>
