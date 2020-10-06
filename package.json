@@ -4,7 +4,8 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build"
+    "build": "ng build",
+    "deploy-build": "ng build --prod --output-path docs --base-href cmpg_323_project_1"
   },
   "private": true,
   "dependencies": {
@@ -25,6 +26,7 @@
     "@angular/cli": "~10.1.4",
     "@angular/compiler-cli": "~10.1.4",
     "@types/node": "^12.11.1",
+    "angular-cli-ghpages": "^0.6.2",
     "codelyzer": "^6.0.0",
     "ts-node": "~8.3.0",
     "tslint": "~6.1.0",
