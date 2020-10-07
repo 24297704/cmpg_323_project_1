@@ -1,0 +1,106 @@
+.page {
+  &.page--projects {
+    @media (max-width: 1100px) {
+      padding: 0 7%;
+    }
+
+    .intro {
+      margin: 0 0 100px;
+      padding: 0 0 100px;
+      border-bottom: 1px solid #eee;
+
+      @media (max-width: 768px) {
+        margin: 0 0 70px;
+        padding: 0 0 70px;
+      }
+
+      .text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+        .text__item {
+          width: 100%;
+          max-width: 640px;
+
+          &.item--paragraph {
+            margin-top: 14px;
+
+            &:last-child {
+              margin-top: 22px;
+            }
+          }
+        }
+      }
+    }
+
+    .projects {
+      .text {
+        margin: 0 auto 40px;
+        max-width: 500px;
+        text-align: center;
+      }
+
+      .list {
+        display: grid;
+        grid-template-columns: repeat(2, 48%);
+        grid-row-gap: 30px;
+        justify-content: space-between;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+
+        @media (max-width: 600px) {
+          grid-template-columns: 100%;
+        }
+
+        .list__item {
+          padding: 20px;
+          background: #eeeeee;
+          border-radius: 14px;
+
+          .item__heading {
+            display: flex;
+            align-items: center;
+
+            &::before {
+              content: '';
+              width: 8px;
+              height: 8px;
+              margin-right: 10px;
+              background: #86ca72;
+              border-radius: 50%;
+            }
+          }
+
+          .item__paragraph {
+            width: 100%;
+            margin: 14px 0 0;
+            font-size: 12px;
+          }
+        }
+      }
+    }
+
+    .outro {
+      margin: 100px 0 0;
+      padding: 70px 0 50px;
+      text-align: center;
+      position: relative;
+      z-index: 3;
+
+      &::before {
+        content: '';
+        width: 100vw;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        background-color: #141414;
+        transform: translateX(-50%);
+        z-index: -1;
+      }
+    }
+  }
+}

@@ -5,7 +5,7 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "deploy-build": "ng build --prod --output-path docs --base-href cmpg_323_project_1"
+    "deploy": "ng deploy --base-href=https://24297704.github.io/cmpg_323_project_1/"
   },
   "private": true,
   "dependencies": {

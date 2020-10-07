@@ -1,60 +1,160 @@
-<div>
-  <h2>Skills</h2>
-  <p>Welcome to my Awesome Skills!</p>
-  <p>This section will contain my technical skills, as well as any other skills that might be relevant, or irrelevant...
-    Basically whatever I can think of.</p>
-  <div>
-    <h3>Technical skills</h3>
-    <p>These are my bread and butter skills (Also how I afford bread and butter), I use these skills on a daily basis
-      and am quite proficient in all of them</p>
-    <ul>
-      <li>HTML (Used in this site)</li>
-      <li>CSS (Used in this site)</li>
-      <li>JavaScript (Used in this site)</li>
-      <li>TypeScript (Used in this site)</li>
-      <li>Angular (Used to code this)</li>
-      <li>NodeJS (What I specialise in)</li>
-      <li>Ionic (Think Angular, but for mobile devices)</li>
-      <li>PWA (Stands for Progressive Web Apps)</li>
-      <li>IoT (Internet of Things)</li>
-      <li>Git</li>
-      <li>REST (Web APIs)</li>
-      <li>Docker</li>
-      <li>MongoDB</li>
-      <li>MySQL</li>
-      <li>Linux</li>
-      <li>Networking (At a basic to intermediate level)</li>
-    </ul>
-    <p>There are probably some missing, but the ones above are the main ones that I use in my day to day life.</p>
+<div class="page page--skills">
+  <div class="intro">
+    <div class="text">
+      <h2 class="text__item item--heading">
+        Skills.
+      </h2>
+      <h6 class="text__item item--paragraph">
+        Welcome to my Awesome Skills!
+      </h6>
+      <p class="text__item item--paragraph">
+        This section will contain my technical skills, as well as any other skills that might be relevant, or
+        irrelevant...
+        Basically whatever I can think of.
+      </p>
+    </div>
   </div>
-  <div>
-    <h3>Soft skills</h3>
-    <p>These are the skills I use that aren't about technology explicitly, and have a wider range of uses.</p>
-    <ul>
-      <li>Problem Solving</li>
-      <li>Creative Thinking</li>
-      <li>Leadership (While I will never be a born leader, I can take charge when needed)</li>
-      <li>Communication</li>
-      <li>Teamwork</li>
-      <li>Focus (Once I get in the zone, I can stay there for hours)</li>
-      <li>Common Sense (You would not believe how rare this is)</li>
+
+  <div class="skills skills--technical">
+    <div class="text">
+      <h3 class="text__item item--heading">
+        Technical skills.
+      </h3>
+      <p class="text__item item--paragraph">
+        These are my bread and butter skills (Also how I afford bread and butter), I use these skills on a daily basis
+        and am quite proficient in all of them.
+      </p>
+    </div>
+
+    <ul class="list">
+      <li class="list__item">
+        HTML (Used in this site)
+      </li>
+      <li class="list__item">
+        CSS (Used in this site)
+      </li>
+      <li class="list__item">
+        JavaScript (Used in this site)
+      </li>
+      <li class="list__item">
+        TypeScript (Used in this site)
+      </li>
+      <li class="list__item">
+        Angular (Used to code this)
+      </li>
+      <li class="list__item">
+        NodeJS (What I specialise in)
+      </li>
+      <li class="list__item">
+        Ionic (Think Angular, but for mobile devices)
+      </li>
+      <li class="list__item">
+        PWA (Stands for Progressive Web Apps)
+      </li>
+      <li class="list__item">
+        IoT (Internet of Things)
+      </li>
+      <li class="list__item">
+        Git
+      </li>
+      <li class="list__item">
+        REST (Web APIs)
+      </li>
+      <li class="list__item">
+        Docker
+      </li>
+      <li class="list__item">
+        MongoDB
+      </li>
+      <li class="list__item">
+        MySQL
+      </li>
+      <li class="list__item">
+        Linux
+      </li>
+      <li class="list__item">
+        Networking (At a basic to intermediate level)
+      </li>
     </ul>
   </div>
-  <div>
-    <h3>Other skills</h3>
-    <p>These skills are of questionable utility in a work environment, but should tell you a bit more about me</p>
-    <ul>
-      <li>Squash (Though I'm not very good)</li>
-      <li>Shooting (Guns specifically)</li>
-      <li>Swimming</li>
-      <li>Cooking</li>
-      <li>DIY Tech Projects (Built an adblock with a Raspberry Pi once, no ads in my whole house!)</li>
-      <li>Margaritas (Both drinking and making them)</li>
-      <li>I like to think I'm funny <a href="javascript:void(0)" (click)="getJoke()">Click here for a joke</a></li>
+
+  <div class="info">
+    <p class="info__paragraph">There are probably some missing, but the ones above are the main ones that I use in my
+      day to day life.</p>
+  </div>
+
+  <div class="skills skills--soft">
+    <div class="text">
+      <h3 class="text__item item--heading">
+        Soft skills.
+      </h3>
+      <p class="text__item item--paragraph">
+        These are the skills I use that aren't about technology explicitly, and have a wider range of uses.
+      </p>
+    </div>
+
+    <ul class="list">
+      <li class="list__item">
+        Problem Solving
+      </li>
+      <li class="list__item">
+        Creative Thinking
+      </li>
+      <li class="list__item">
+        Leadership (While I will never be a born leader, I can take charge when needed)
+      </li>
+      <li class="list__item">
+        Communication
+      </li>
+      <li class="list__item">
+        Teamwork
+      </li>
+      <li class="list__item">
+        Focus (Once I get in the zone, I can stay there for hours)
+      </li>
+      <li class="list__item">
+        Common Sense (You would not believe how rare this is)
+      </li>
     </ul>
-    <div>
-      <img src="/assets/loader.svg" *ngIf="loading">
-      <p *ngIf="joke && !loading">{{ joke }}</p>
+  </div>
+
+  <div class="skills skills--other">
+    <div class="text">
+      <h3 class="text__item item--heading">
+        Other skills.
+      </h3>
+      <p class="text__item item--paragraph">
+        These skills are of questionable utility in a work environment, but should tell you a bit more about me.
+      </p>
+    </div>
+
+    <ul class="list">
+      <li class="list__item">
+        Squash (Though I'm not very good)
+      </li>
+      <li class="list__item">
+        Shooting (Guns specifically)
+      </li>
+      <li class="list__item">
+        Swimming
+      </li>
+      <li class="list__item">
+        Cooking
+      </li>
+      <li class="list__item">
+        DIY Tech Projects (Built an adblock with a Raspberry Pi once, no ads in my whole house!)
+      </li>
+      <li class="list__item">
+        Margaritas (Both drinking and making them)
+      </li>
+      <li class="list__item">
+        I like to think I'm funny <a (click)="getJoke()" href="javascript:void(0)">Click here for a joke</a>
+      </li>
+    </ul>
+
+    <div class="joke">
+      <img *ngIf="loading" class="joke__image" src="assets/loader.svg">
+      <p *ngIf="joke && !loading" class="joke__text">{{ joke }}</p>
     </div>
   </div>
 </div>

@@ -17,7 +17,7 @@ export class SkillsComponent implements OnInit {
   ngOnInit (): void {
   }
 
-  getJoke() {
+  getJoke () {
     this.loading = true
     this.apiService.getJoke().subscribe((res: any) => {
       this.loading = false
